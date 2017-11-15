@@ -15,7 +15,7 @@ public class ScheduleEntity {
     private String classname;
 
     @Id
-    @Column(name = "schedule_id")
+    @javax.persistence.Column(name = "schedule_id")
     public String getScheduleId() {
         return scheduleId;
     }
@@ -25,7 +25,7 @@ public class ScheduleEntity {
     }
 
     @Basic
-    @Column(name = "timings")
+    @javax.persistence.Column(name = "timings")
     public Timestamp getTimings() {
         return timings;
     }
@@ -35,7 +35,7 @@ public class ScheduleEntity {
     }
 
     @Basic
-    @Column(name = "location")
+    @javax.persistence.Column(name = "location")
     public String getLocation() {
         return location;
     }
@@ -45,7 +45,7 @@ public class ScheduleEntity {
     }
 
     @Basic
-    @Column(name = "classname")
+    @javax.persistence.Column(name = "classname")
     public String getClassname() {
         return classname;
     }

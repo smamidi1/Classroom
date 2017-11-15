@@ -14,7 +14,7 @@ public class StudentEntity {
     private String studentPhno;
 
     @Id
-    @Column(name = "student_id")
+    @javax.persistence.Column(name = "student_id")
     public String getStudentId() {
         return studentId;
     }
@@ -24,7 +24,7 @@ public class StudentEntity {
     }
 
     @Basic
-    @Column(name = "student_name")
+    @javax.persistence.Column(name = "student_name")
     public String getStudentName() {
         return studentName;
     }
@@ -34,7 +34,7 @@ public class StudentEntity {
     }
 
     @Basic
-    @Column(name = "student_email")
+    @javax.persistence.Column(name = "student_email")
     public String getStudentEmail() {
         return studentEmail;
     }

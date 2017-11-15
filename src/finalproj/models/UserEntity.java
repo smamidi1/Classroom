@@ -13,6 +13,7 @@ public class UserEntity {
     private String password;
     private String usertype;
 
+
     @Id
     @Column(name = "iduser")
     public int getIduser() {
@@ -34,7 +35,7 @@ public class UserEntity {
     }
 
     @Basic
-    @Column(name = "password")
+    @javax.persistence.Column(name = "password")
     public String getPassword() {
         return password;
     }
@@ -44,7 +45,7 @@ public class UserEntity {
     }
 
     @Basic
-    @Column(name = "usertype")
+    @javax.persistence.Column(name = "usertype")
     public String getUsertype() {
         return usertype;
     }
