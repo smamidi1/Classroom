@@ -12,7 +12,7 @@ public class ClassesEntity {
     private String className;
 
     @Id
-    @Column(name = "class_id")
+    @javax.persistence.Column(name = "class_id")
     public String getClassId() {
         return classId;
     }
@@ -22,7 +22,7 @@ public class ClassesEntity {
     }
 
     @Basic
-    @Column(name = "class_name")
+    @javax.persistence.Column(name = "class_name")
     public String getClassName() {
         return className;
     }

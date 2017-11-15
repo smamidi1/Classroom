@@ -18,7 +18,7 @@ public class TaEntity {
     private String assignmentId;
 
     @Id
-    @Column(name = "ta_id")
+    @javax.persistence.Column(name = "ta_id")
     public String getTaId() {
         return taId;
     }
@@ -28,7 +28,7 @@ public class TaEntity {
     }
 
     @Basic
-    @Column(name = "ta_name")
+    @javax.persistence.Column(name = "ta_name")
     public String getTaName() {
         return taName;
     }
@@ -38,7 +38,7 @@ public class TaEntity {
     }
 
     @Basic
-    @Column(name = "ta_email")
+    @javax.persistence.Column(name = "ta_email")
     public String getTaEmail() {
         return taEmail;
     }
@@ -48,7 +48,7 @@ public class TaEntity {
     }
 
     @Basic
-    @Column(name = "ta_phone")
+    @javax.persistence.Column(name = "ta_phone")
     public String getTaPhone() {
         return taPhone;
     }
@@ -58,7 +58,7 @@ public class TaEntity {
     }
 
     @Basic
-    @Column(name = "ta_timings")
+    @javax.persistence.Column(name = "ta_timings")
     public Timestamp getTaTimings() {
         return taTimings;
     }
@@ -68,7 +68,7 @@ public class TaEntity {
     }
 
     @Basic
-    @Column(name = "class_id")
+    @javax.persistence.Column(name = "class_id")
     public String getClassId() {
         return classId;
     }
@@ -78,7 +78,7 @@ public class TaEntity {
     }
 
     @Basic
-    @Column(name = "assignment_id")
+    @javax.persistence.Column(name = "assignment_id")
     public String getAssignmentId() {
         return assignmentId;
     }

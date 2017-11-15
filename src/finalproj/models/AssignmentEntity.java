@@ -5,6 +5,7 @@ import javax.persistence.*;
 /**
  * Created by Dhruva Juloori on 11/14/2017.
  */
+
 @Entity
 @Table(name = "assignment", schema = "project_515")
 public class AssignmentEntity {
@@ -14,7 +15,7 @@ public class AssignmentEntity {
     private Integer totalPoints;
 
     @Id
-    @Column(name = "assignment_id")
+    @javax.persistence.Column(name = "assignment_id")
     public String getAssignmentId() {
         return assignmentId;
     }
@@ -24,7 +25,7 @@ public class AssignmentEntity {
     }
 
     @Basic
-    @Column(name = "assignment_name")
+    @javax.persistence.Column(name = "assignment_name")
     public String getAssignmentName() {
         return assignmentName;
     }
@@ -34,7 +35,7 @@ public class AssignmentEntity {
     }
 
     @Basic
-    @Column(name = "assignment_desc")
+    @javax.persistence.Column(name = "assignment_desc")
     public String getAssignmentDesc() {
         return assignmentDesc;
     }
@@ -44,7 +45,7 @@ public class AssignmentEntity {
     }
 
     @Basic
-    @Column(name = "total_points")
+    @javax.persistence.Column(name = "total_points")
     public Integer getTotalPoints() {
         return totalPoints;
     }
